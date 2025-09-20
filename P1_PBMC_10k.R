@@ -114,6 +114,8 @@ names(new.cluster.ids) <- levels(pbmc10k_sub)
 pbmc10k_sub <- RenameIdents(pbmc10k_sub, new.cluster.ids)
 DimPlot(pbmc10k_sub, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
 
+
+##Following are the identities of each cluster
 #0 = CD4 T cell (Naive)
 #1 = CD14⁺ classical monocytes
 #2 = CD4 T cell (Memory)
@@ -126,6 +128,7 @@ DimPlot(pbmc10k_sub, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend
 #9 = Cytotoxic CD8
 #10 = B cell
 #11 = Platelets
+
 
 
 
